@@ -42,16 +42,16 @@ class _FormIdBtnState extends State<FormIdBtn> {
         Container(
           height: 40,
           width: double.infinity,
-          margin: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+          margin: const EdgeInsets.fromLTRB(40, 10, 40, 0),
           decoration: BoxDecoration(
             color: Colors.transparent,
             border: Border.all(color: ColorsApp.grayHard, width: 2),
             borderRadius: BorderRadius.circular(10),
           ),
           padding: const EdgeInsets.only(left: 12),
-          alignment: Alignment.centerLeft,
+          alignment: Alignment.center,
           child: Text(
-            'ID - ${_idVisual ?? ''}', // 🧾 Exibe o ID visual
+            'ID - ${_idVisual ?? ''}', // Exibe o ID visual
             style: const TextStyle(
               color: ColorsApp.grayHard,
               fontWeight: FontWeight.bold,

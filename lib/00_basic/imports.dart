@@ -37,3 +37,5 @@ export 'package:butcher_ctl/08_listview/widgets/sold_list_view_ctn.dart';
 export 'package:butcher_ctl/09_form_add_btn/form_add_item_ctn.dart';
 export 'package:butcher_ctl/10_form_imputs/widgets/form_id_btn.dart';
 export 'package:butcher_ctl/10_form_imputs/controllers/form_id_ctl.dart';
+export 'package:butcher_ctl/10_form_imputs/widgets/form_type_btn.dart';
+export 'package:butcher_ctl/10_form_imputs/controllers/form_type_ctl.dart';
