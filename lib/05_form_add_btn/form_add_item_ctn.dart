@@ -1,7 +1,7 @@
 import 'package:butcher_ctl/00_basic/imports.dart';
-import 'package:butcher_ctl/09_form_add_btn/widgets/form_chek_btn.dart';
-import 'package:butcher_ctl/09_form_add_btn/widgets/form_close_btn.dart';
-import 'package:butcher_ctl/10_form_imputs/form_imputs_btn.dart';
+import 'package:butcher_ctl/05_form_add_btn/widgets/form_chek_btn.dart';
+import 'package:butcher_ctl/05_form_add_btn/widgets/form_close_btn.dart';
+import 'package:butcher_ctl/06_form_imputs/form_imputs_btn.dart';
 
 class FormAddItemCtn extends StatefulWidget {
   const FormAddItemCtn({super.key});

@@ -63,7 +63,7 @@ class FormValidadeBtn extends StatelessWidget {
                   width: double.infinity,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: ColorsApp.grayLight,
+                    color: ColorsApp.grayNormal,
                     borderRadius: BorderRadius.circular(7),
                     border: Border.all(color: ColorsApp.greenNormal, width: 2),
                   ),
