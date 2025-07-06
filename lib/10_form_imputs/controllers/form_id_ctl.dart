@@ -11,7 +11,7 @@
 ///
 /// 🧱 Onde se encaixa:
 /// Usado dentro do botão visual `FormIdBtn`, que é parte do formulário `FormAdd`.
-class FormIdCtlClass {
+class FormIdCls {
   //Contador interno que simula a quantidade de carnes adicionadas
   int _itemCounter = 0;
 

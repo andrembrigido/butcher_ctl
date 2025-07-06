@@ -21,7 +21,7 @@ class FormIdBtn extends StatefulWidget {
 
 class _FormIdBtnState extends State<FormIdBtn> {
   // 🎛️ Controller que gerencia a lógica do ID
-  final FormIdCtlClass _controller = FormIdCtlClass();
+  final FormIdCls _controller = FormIdCls();
 
   // 💾 ID visual temporário exibido ao usuário
   String? _idVisual;

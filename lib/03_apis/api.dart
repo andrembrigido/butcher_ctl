@@ -1,234 +1,204 @@
-/*
-  🧫 O que faz:
-  Esse arquivo simula uma API que retorna uma lista de itens do estoque (congelados).
-  Cada item é criado com todos os campos definidos no modelo original.
-
-  📌 Para que serve:
-  - Testar o app sem precisar de servidor real
-  - Treinar a interface com dados completos e coerentes
-  - Garantir que o modelo está sendo usado corretamente
-
-  🍽️ ANALOGIA:
-  Imagine que a gente montou um estoque de carnes já embaladas, com etiqueta, data e tudo.
-  Esses dados simulam esse estoque pronto pra ser exibido no sistema.
-*/
-
 import 'package:butcher_ctl/00_basic/imports.dart';
 
+/// 🧠 O que faz:
+/// Simula uma API real, retornando uma lista de carnes congeladas variadas.
+///
+/// 📌 Para que serve:
+/// Fornece dados completos para testar o app, com cortes diferentes por tipo de carne.
 Future<List<ItemModel>> fetchItens() async {
   await Future.delayed(const Duration(milliseconds: 500));
 
   final List<ItemModel> itens = [
     // --------------------------------------------------------------------------
-    // 🐄 ITENS BOVINOS
+    // 🐄 CARNES BOVINAS
     // --------------------------------------------------------------------------
+    ItemModel(
+      id: '1',
+      type: 'Boi',
+      name: 'Picanha',
+      freezer: 'F1',
+      prateleira: 'A1',
+      durabilidade: '60 dias',
+      fabricacao: DateTime.parse('2025-06-10'),
+      validade: DateTime.parse('2025-08-09'),
+    ),
     ItemModel(
       id: '2',
       type: 'Boi',
-      name: 'Patinho',
-      freezer: 'F6',
-      prateleira: 'B1',
-      durabilidade: '15 dias',
-      fabricacao: DateTime.parse('2025-07-03'),
-      validade: DateTime.parse('2025-07-18'),
+      name: 'Contra-filé',
+      freezer: 'F2',
+      prateleira: 'B2',
+      durabilidade: '45 dias',
+      fabricacao: DateTime.parse('2025-06-15'),
+      validade: DateTime.parse('2025-07-30'),
     ),
     ItemModel(
       id: '3',
       type: 'Boi',
-      name: 'Patinho',
-      freezer: 'F2',
+      name: 'Filé Mignon',
+      freezer: 'F3',
       prateleira: 'C1',
-      durabilidade: '79 dias',
-      fabricacao: DateTime.parse('2025-07-04'),
-      validade: DateTime.parse('2025-09-21'),
-    ),
-    ItemModel(
-      id: '11',
-      type: 'Boi',
-      name: 'Fraldinha',
-      freezer: 'F1',
-      prateleira: 'C2',
-      durabilidade: '73 dias',
-      fabricacao: DateTime.parse('2025-05-08'),
+      durabilidade: '30 dias',
+      fabricacao: DateTime.parse('2025-06-20'),
       validade: DateTime.parse('2025-07-20'),
     ),
     ItemModel(
-      id: '12',
-      type: 'Boi',
-      name: 'Acém',
-      freezer: 'F5',
-      prateleira: 'B2',
-      durabilidade: '51 dias',
-      fabricacao: DateTime.parse('2025-06-03'),
-      validade: DateTime.parse('2025-07-24'),
-    ),
-
-    // --------------------------------------------------------------------------
-    // 🐔 ITENS AVIÁRIOS
-    // --------------------------------------------------------------------------
-    ItemModel(
-      id: '1',
-      type: 'Frango',
-      name: 'Peito',
-      freezer: 'F1',
-      prateleira: 'B2',
-      durabilidade: '30 dias',
-      fabricacao: DateTime.parse('2025-06-18'),
-      validade: DateTime.parse('2025-07-18'),
-    ),
-    ItemModel(
       id: '4',
-      type: 'Frango',
-      name: 'Asa',
-      freezer: 'F4',
-      prateleira: 'C2',
-      durabilidade: '31 dias',
-      fabricacao: DateTime.parse('2025-06-25'),
-      validade: DateTime.parse('2025-07-26'),
+      type: 'Boi',
+      name: 'Alcatra',
+      freezer: 'F1',
+      prateleira: 'A2',
+      durabilidade: '40 dias',
+      fabricacao: DateTime.parse('2025-06-18'),
+      validade: DateTime.parse('2025-07-28'),
     ),
     ItemModel(
       id: '5',
-      type: 'Frango',
-      name: 'Asa',
-      freezer: 'F6',
-      prateleira: 'B1',
-      durabilidade: '51 dias',
-      fabricacao: DateTime.parse('2025-05-25'),
-      validade: DateTime.parse('2025-07-15'),
-    ),
-    ItemModel(
-      id: '6',
-      type: 'Frango',
-      name: 'Peito',
+      type: 'Boi',
+      name: 'Fraldinha',
       freezer: 'F4',
-      prateleira: 'B1',
-      durabilidade: '37 dias',
-      fabricacao: DateTime.parse('2025-06-02'),
-      validade: DateTime.parse('2025-07-09'),
-    ),
-    ItemModel(
-      id: '7',
-      type: 'Frango',
-      name: 'Peito',
-      freezer: 'F1',
-      prateleira: 'A2',
-      durabilidade: '85 dias',
-      fabricacao: DateTime.parse('2025-05-13'),
-      validade: DateTime.parse('2025-08-06'),
-    ),
-    ItemModel(
-      id: '8',
-      type: 'Frango',
-      name: 'Coxa',
-      freezer: 'F4',
-      prateleira: 'A2',
-      durabilidade: '36 dias',
-      fabricacao: DateTime.parse('2025-06-08'),
-      validade: DateTime.parse('2025-07-14'),
-    ),
-    ItemModel(
-      id: '9',
-      type: 'Frango',
-      name: 'Sobrecoxa',
-      freezer: 'F3',
-      prateleira: 'A1',
-      durabilidade: '37 dias',
-      fabricacao: DateTime.parse('2025-06-20'),
+      prateleira: 'C2',
+      durabilidade: '35 dias',
+      fabricacao: DateTime.parse('2025-06-22'),
       validade: DateTime.parse('2025-07-27'),
     ),
     ItemModel(
+      id: '6',
+      type: 'Boi',
+      name: 'Acém',
+      freezer: 'F2',
+      prateleira: 'B1',
+      durabilidade: '50 dias',
+      fabricacao: DateTime.parse('2025-06-05'),
+      validade: DateTime.parse('2025-07-25'),
+    ),
+
+    // --------------------------------------------------------------------------
+    // 🐖 CARNES SUÍNAS
+    // --------------------------------------------------------------------------
+    ItemModel(
+      id: '7',
+      type: 'Porco',
+      name: 'Costela',
+      freezer: 'F3',
+      prateleira: 'A1',
+      durabilidade: '60 dias',
+      fabricacao: DateTime.parse('2025-06-11'),
+      validade: DateTime.parse('2025-08-10'),
+    ),
+    ItemModel(
+      id: '8',
+      type: 'Porco',
+      name: 'Lombo',
+      freezer: 'F1',
+      prateleira: 'C2',
+      durabilidade: '45 dias',
+      fabricacao: DateTime.parse('2025-06-13'),
+      validade: DateTime.parse('2025-07-28'),
+    ),
+    ItemModel(
+      id: '9',
+      type: 'Porco',
+      name: 'Pernil',
+      freezer: 'F4',
+      prateleira: 'B2',
+      durabilidade: '40 dias',
+      fabricacao: DateTime.parse('2025-06-09'),
+      validade: DateTime.parse('2025-07-19'),
+    ),
+    ItemModel(
       id: '10',
-      type: 'Frango',
-      name: 'Frango inteiro',
+      type: 'Porco',
+      name: 'Linguiça',
+      freezer: 'F2',
+      prateleira: 'B1',
+      durabilidade: '30 dias',
+      fabricacao: DateTime.parse('2025-06-16'),
+      validade: DateTime.parse('2025-07-16'),
+    ),
+    ItemModel(
+      id: '11',
+      type: 'Porco',
+      name: 'Paleta',
+      freezer: 'F5',
+      prateleira: 'C1',
+      durabilidade: '35 dias',
+      fabricacao: DateTime.parse('2025-06-17'),
+      validade: DateTime.parse('2025-07-22'),
+    ),
+    ItemModel(
+      id: '12',
+      type: 'Porco',
+      name: 'Costela',
       freezer: 'F1',
       prateleira: 'A2',
-      durabilidade: '88 dias',
+      durabilidade: '50 dias',
+      fabricacao: DateTime.parse('2025-06-12'),
+      validade: DateTime.parse('2025-08-01'),
+    ),
+
+    // --------------------------------------------------------------------------
+    // 🐔 CARNES AVIÁRIAS
+    // --------------------------------------------------------------------------
+    ItemModel(
+      id: '13',
+      type: 'Frango',
+      name: 'Coxa',
+      freezer: 'F3',
+      prateleira: 'A1',
+      durabilidade: '25 dias',
       fabricacao: DateTime.parse('2025-06-21'),
-      validade: DateTime.parse('2025-09-17'),
+      validade: DateTime.parse('2025-07-16'),
+    ),
+    ItemModel(
+      id: '14',
+      type: 'Frango',
+      name: 'Sobrecoxa',
+      freezer: 'F4',
+      prateleira: 'B2',
+      durabilidade: '30 dias',
+      fabricacao: DateTime.parse('2025-06-14'),
+      validade: DateTime.parse('2025-07-14'),
+    ),
+    ItemModel(
+      id: '15',
+      type: 'Frango',
+      name: 'Peito',
+      freezer: 'F1',
+      prateleira: 'C1',
+      durabilidade: '35 dias',
+      fabricacao: DateTime.parse('2025-06-10'),
+      validade: DateTime.parse('2025-07-15'),
+    ),
+    ItemModel(
+      id: '16',
+      type: 'Frango',
+      name: 'Asa',
+      freezer: 'F2',
+      prateleira: 'B1',
+      durabilidade: '28 dias',
+      fabricacao: DateTime.parse('2025-06-18'),
+      validade: DateTime.parse('2025-07-16'),
     ),
     ItemModel(
       id: '17',
       type: 'Frango',
-      name: 'Asa',
-      freezer: 'F1',
-      prateleira: 'C2',
-      durabilidade: '64 dias',
-      fabricacao: DateTime.parse('2025-06-13'),
-      validade: DateTime.parse('2025-08-16'),
+      name: 'Frango inteiro',
+      freezer: 'F5',
+      prateleira: 'A2',
+      durabilidade: '45 dias',
+      fabricacao: DateTime.parse('2025-06-07'),
+      validade: DateTime.parse('2025-07-22'),
     ),
     ItemModel(
       id: '18',
       type: 'Frango',
-      name: 'Frango inteiro',
-      freezer: 'F1',
-      prateleira: 'C1',
-      durabilidade: '63 dias',
-      fabricacao: DateTime.parse('2025-06-05'),
-      validade: DateTime.parse('2025-08-07'),
-    ),
-    ItemModel(
-      id: '19',
-      type: 'Frango',
       name: 'Peito',
-      freezer: 'F1',
+      freezer: 'F4',
       prateleira: 'C2',
-      durabilidade: '41 dias',
-      fabricacao: DateTime.parse('2025-06-18'),
-      validade: DateTime.parse('2025-07-29'),
-    ),
-    ItemModel(
-      id: '20',
-      type: 'Frango',
-      name: 'Frango inteiro',
-      freezer: 'F2',
-      prateleira: 'B2',
-      durabilidade: '85 dias',
-      fabricacao: DateTime.parse('2025-06-26'),
-      validade: DateTime.parse('2025-09-19'),
-    ),
-
-    // --------------------------------------------------------------------------
-    // 🐖 ITENS SUÍNOS
-    // --------------------------------------------------------------------------
-    ItemModel(
-      id: '13',
-      type: 'Porco',
-      name: 'Linguiça',
-      freezer: 'F1',
-      prateleira: 'A2',
-      durabilidade: '64 dias',
-      fabricacao: DateTime.parse('2025-06-07'),
-      validade: DateTime.parse('2025-08-10'),
-    ),
-    ItemModel(
-      id: '14',
-      type: 'Porco',
-      name: 'Costela',
-      freezer: 'F2',
-      prateleira: 'C1',
-      durabilidade: '21 dias',
-      fabricacao: DateTime.parse('2025-07-01'),
-      validade: DateTime.parse('2025-07-22'),
-    ),
-    ItemModel(
-      id: '15',
-      type: 'Porco',
-      name: 'Linguiça',
-      freezer: 'F5',
-      prateleira: 'C2',
-      durabilidade: '87 dias',
-      fabricacao: DateTime.parse('2025-06-18'),
-      validade: DateTime.parse('2025-09-13'),
-    ),
-    ItemModel(
-      id: '16',
-      type: 'Porco',
-      name: 'Linguiça',
-      freezer: 'F5',
-      prateleira: 'C1',
-      durabilidade: '73 dias',
-      fabricacao: DateTime.parse('2025-06-15'),
-      validade: DateTime.parse('2025-08-27'),
+      durabilidade: '33 dias',
+      fabricacao: DateTime.parse('2025-06-11'),
+      validade: DateTime.parse('2025-07-14'),
     ),
   ];
 

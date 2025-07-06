@@ -1,5 +1,4 @@
 import 'package:butcher_ctl/00_basic/imports.dart';
-import 'package:butcher_ctl/10_form_imputs/widgets/form_type_btn.dart';
 
 class FormImputsBtn extends StatefulWidget {
   const FormImputsBtn({super.key});
@@ -9,6 +8,16 @@ class FormImputsBtn extends StatefulWidget {
 }
 
 class _FormImputsBtnState extends State<FormImputsBtn> {
+  // Criação do controller unificado
+  final formTypeNameCtl = FormTypeNameCls();
+
+  // Carrega os dados da API ao iniciar
+  @override
+  void initState() {
+    super.initState();
+    formTypeNameCtl.carregarDadosDaApi();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -16,7 +25,9 @@ class _FormImputsBtnState extends State<FormImputsBtn> {
         height: 80,
         width: double.infinity,
         color: ColorsApp.grayNormal,
-        child: Column(children: [FormIdBtn(), FormTypeBtn()]),
+        child: Column(
+          children: [FormIdBtn(), FormTypeNameBtn(controller: formTypeNameCtl)],
+        ),
       ),
     );
   }
