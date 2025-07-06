@@ -1,5 +1,5 @@
-import 'package:butcher_ctl/04_navbar/nav_bar_ctn.dart';
 import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/06_navbar/nav_bar_ctn.dart';
 
 class HomePg extends StatefulWidget {
   const HomePg({super.key});

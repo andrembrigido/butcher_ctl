@@ -14,7 +14,7 @@ class FormValidadeBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+      margin: const EdgeInsets.fromLTRB(20, 15, 20, 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

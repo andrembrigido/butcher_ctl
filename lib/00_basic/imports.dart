@@ -27,7 +27,6 @@ export 'package:butcher_ctl/02_apis/api.dart';
 export 'package:butcher_ctl/02_apis/controllers/api_ctl.dart';
 export 'package:butcher_ctl/02_apis/stores/api_store.dart';
 export 'package:butcher_ctl/03_appbar/app_bar_ctn.dart';
-export 'package:butcher_ctl/04_navbar/nav_bar_ctn.dart';
 export 'package:butcher_ctl/05_form_add_btn/form_add_item_ctn.dart';
 export 'package:butcher_ctl/06_form_imputs/widgets/form_id_btn.dart';
 export 'package:butcher_ctl/06_form_imputs/controllers/form_id_ctl.dart';
