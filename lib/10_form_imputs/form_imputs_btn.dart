@@ -1,4 +1,5 @@
 import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/10_form_imputs/widgets/form_type_btn.dart';
 
 class FormImputsBtn extends StatefulWidget {
   const FormImputsBtn({super.key});
@@ -15,7 +16,7 @@ class _FormImputsBtnState extends State<FormImputsBtn> {
         height: 80,
         width: double.infinity,
         color: ColorsApp.grayNormal,
-        child: Column(children: []),
+        child: Column(children: [FormIdBtn(), FormTypeBtn()]),
       ),
     );
   }
