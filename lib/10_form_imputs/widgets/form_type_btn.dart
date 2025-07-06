@@ -1,10 +1,10 @@
 import 'package:butcher_ctl/00_basic/imports.dart';
 
 /// Widget visual que exibe os botões de tipo e o dropdown de nome da carne
-class FormTypeNameBtn extends StatelessWidget {
+class FormTypeBtn extends StatelessWidget {
   final FormTypeNameCls controller;
 
-  const FormTypeNameBtn({super.key, required this.controller});
+  const FormTypeBtn({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class FormTypeNameBtn extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           // =========================================================================
-          // ÍTULO "TIPO DE CARNE"
+          // TÍTULO "TIPO DE CARNE"
           // =========================================================================
           Container(
             height: 20,
@@ -34,11 +34,12 @@ class FormTypeNameBtn extends StatelessWidget {
               ),
             ),
           ),
+
           // =========================================================================
           // BOTÕES DE BOI, PORCO E AVE
           // =========================================================================
           Container(
-            padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+            padding: const EdgeInsets.only(top: 10),
             child: ValueListenableBuilder<String?>(
               valueListenable: controller.tipoSelecionado,
               builder: (context, tipoSelecionado, _) {
@@ -73,11 +74,12 @@ class FormTypeNameBtn extends StatelessWidget {
               },
             ),
           ),
+
           // =========================================================================
           // DROPDOWN DE NOMES DOS CORTES
           // =========================================================================
           Container(
-            padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+            padding: const EdgeInsets.only(top: 10),
             child: ValueListenableBuilder<List<String>>(
               valueListenable: controller.nomesDisponiveis,
               builder: (context, nomes, _) {

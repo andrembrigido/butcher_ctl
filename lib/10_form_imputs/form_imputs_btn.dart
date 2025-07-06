@@ -8,10 +8,13 @@ class FormImputsBtn extends StatefulWidget {
 }
 
 class _FormImputsBtnState extends State<FormImputsBtn> {
-  // Criação do controller unificado
+  // Controller responsável por tipo e nome da carne
   final formTypeNameCtl = FormTypeNameCls();
 
-  // Carrega os dados da API ao iniciar
+  // Controller responsável por freezer e prateleira
+  final formFrezzerCtl = FormFrezzerCls();
+
+  // Carrega os dados da API no início
   @override
   void initState() {
     super.initState();
@@ -22,11 +25,14 @@ class _FormImputsBtnState extends State<FormImputsBtn> {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        height: 80,
         width: double.infinity,
         color: ColorsApp.grayNormal,
         child: Column(
-          children: [FormIdBtn(), FormTypeNameBtn(controller: formTypeNameCtl)],
+          children: [
+            FormIdBtn(),
+            FormTypeBtn(controller: formTypeNameCtl),
+            FormFrezzerBtn(controller: formFrezzerCtl),
+          ],
         ),
       ),
     );

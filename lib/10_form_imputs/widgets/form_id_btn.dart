@@ -42,7 +42,7 @@ class _FormIdBtnState extends State<FormIdBtn> {
         Container(
           height: 40,
           width: double.infinity,
-          margin: const EdgeInsets.fromLTRB(40, 10, 40, 0),
+          margin: const EdgeInsets.fromLTRB(15, 10, 15, 0),
           decoration: BoxDecoration(
             color: Colors.transparent,
             border: Border.all(color: ColorsApp.greenNormal, width: 2),
