@@ -11,39 +11,44 @@
   💡 Como usar:
   Em qualquer outro arquivo do projeto, basta escrever:
   
-    import 'package:basic_project/imports.dart';
-
-  Isso já dá acesso a todos os pacotes, temas, controllers e outros arquivos exportados aqui.
-
-  🔁 Qual a diferença entre `import` e `export` no Dart?
-
-    ✅ import  → você usa algo diretamente neste arquivo.
-    ✅ export  → você repassa algo para que outros arquivos também possam usar.
-
-  Exemplo:
-    export 'package:flutter/material.dart';
-    // Isso permite que qualquer arquivo que importe este `imports.dart` também use `material.dart`.
+    import 'package:butcher_ctl/00_basic/imports.dart';
 
   ⚠️ Regras:
   - Só adicione aqui arquivos que são compartilhados entre várias partes do app.
   - Evite colocar arquivos específicos que só são usados em um único lugar.
 */
 
-// Flutter SDK
+/// 🌐 FLUTTER SDK
 export 'package:flutter/material.dart';
-// Paleta de cores personalizada do projeto
-export '../01_themes/colors_palette.dart';
-// Ícones do FontAwesome (ex: FontAwesomeIcons.dog, cat, fish)
-export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-export '../00_basic/app.dart';
-export '../02 _models/model.dart';
-export '../03_apis/api.dart';
-export '../04_stores/store.dart';
-export '../05_appbar/app_bar_ctn.dart';
-export '../07_home/home_pg.dart';
-export '../08_listview/list_view_ctn.dart';
-export '../08_listview/controllers/list_view_ctl.dart';
-export '../08_listview/widgets/stock_list_view_ctn.dart';
-export '../08_listview/widgets/trash_list_view_ctn.dart';
-export '../08_listview/widgets/sold_list_view_ctn.dart';
+/// 🚀 ENTRADA DO APP
+export 'package:butcher_ctl/00_basic/app.dart';
+
+/// 🎨 TEMAS E CORES
+export 'package:butcher_ctl/01_themes/colors_palette.dart';
+
+/// 📦 MODELOS
+export 'package:butcher_ctl/02 _models/model.dart';
+
+/// 🔌 API FAKE + CONTROLLER
+export 'package:butcher_ctl/03_apis/api.dart';
+export 'package:butcher_ctl/03_apis/api_ctl.dart';
+
+/// 📦 STORE
+export 'package:butcher_ctl/04_stores/store.dart';
+
+/// 🧱 COMPONENTES COMPARTILHADOS
+export 'package:butcher_ctl/05_appbar/app_bar_ctn.dart';
+
+/// 🏠 TELA PRINCIPAL
+export 'package:butcher_ctl/07_home/home_pg.dart';
+
+/// 📋 LISTVIEW (e subcomponentes)
+export 'package:butcher_ctl/08_listview/list_view_ctn.dart';
+export 'package:butcher_ctl/08_listview/controllers/list_view_ctl.dart';
+export 'package:butcher_ctl/08_listview/widgets/stock_list_view_ctn.dart';
+export 'package:butcher_ctl/08_listview/widgets/trash_list_view_ctn.dart';
+export 'package:butcher_ctl/08_listview/widgets/sold_list_view_ctn.dart';
+
+/// 🎯 ÍCONES
+export 'package:font_awesome_flutter/font_awesome_flutter.dart';

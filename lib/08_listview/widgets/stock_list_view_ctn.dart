@@ -1,4 +1,5 @@
 import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/09_form_add_btn/widgets/add_item_btn.dart';
 
 class StockListViewCtn extends StatefulWidget {
   const StockListViewCtn({super.key});
@@ -43,8 +44,8 @@ class _StockListViewCtnState extends State<StockListViewCtn> {
                   ),
                 ),
               ),
-              /* █████████████████████ ADD CONGELADOS BOTTON █████████████████████ */
-              // AddItemBtn(),
+              /* █████████████████████ ADD ITEMS BOTTON █████████████████████ */
+              AddItemBtn(),
             ],
           ),
         ],
