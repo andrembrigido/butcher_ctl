@@ -14,10 +14,14 @@ class _FormImputsBtnState extends State<FormImputsBtn> {
   // Controller responsável por freezer e prateleira
   final formFrezzerCtl = FormFrezzerCls();
 
-  // Carrega os dados da API no início
+  // Controller responsável pela data de validade
+  final formValidadeCtl = FormValidadeCtl();
+
   @override
   void initState() {
     super.initState();
+
+    // Carrega os dados da API (nomes dos cortes) ao iniciar
     formTypeNameCtl.carregarDadosDaApi();
   }
 
@@ -32,6 +36,7 @@ class _FormImputsBtnState extends State<FormImputsBtn> {
             FormIdBtn(),
             FormTypeBtn(controller: formTypeNameCtl),
             FormFrezzerBtn(controller: formFrezzerCtl),
+            FormValidadeBtn(controller: formValidadeCtl),
           ],
         ),
       ),

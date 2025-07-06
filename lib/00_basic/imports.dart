@@ -41,3 +41,5 @@ export 'package:butcher_ctl/10_form_imputs/widgets/form_type_btn.dart';
 export 'package:butcher_ctl/10_form_imputs/controllers/form_type_ctl.dart';
 export 'package:butcher_ctl/10_form_imputs/widgets/form_frezzer_btn.dart';
 export 'package:butcher_ctl/10_form_imputs/controllers/form_frezzer_ctl.dart';
+export 'package:butcher_ctl/10_form_imputs/widgets/form_validade_btn.dart';
+export 'package:butcher_ctl/10_form_imputs/controllers/form_validade_ctl.dart';

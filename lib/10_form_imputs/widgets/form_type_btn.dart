@@ -93,7 +93,7 @@ class FormTypeBtn extends StatelessWidget {
                         vertical: 4,
                       ),
                       decoration: BoxDecoration(
-                        color: ColorsApp.grayLight,
+                        color: ColorsApp.grayNormal,
                         borderRadius: BorderRadius.circular(7),
                         border: Border.all(
                           color: ColorsApp.greenNormal,
