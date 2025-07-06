@@ -45,7 +45,7 @@ class _FormIdBtnState extends State<FormIdBtn> {
           margin: const EdgeInsets.fromLTRB(40, 10, 40, 0),
           decoration: BoxDecoration(
             color: Colors.transparent,
-            border: Border.all(color: ColorsApp.grayHard, width: 2),
+            border: Border.all(color: ColorsApp.greenNormal, width: 2),
             borderRadius: BorderRadius.circular(10),
           ),
           padding: const EdgeInsets.only(left: 12),
