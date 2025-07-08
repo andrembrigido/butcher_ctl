@@ -1,4 +1,4 @@
-import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/imports.dart';
 
 /// Widget visual que exibe os botões de tipo e o dropdown de nome da carne
 class FormTypeBtn extends StatelessWidget {

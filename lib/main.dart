@@ -22,7 +22,7 @@ Não pode ter:
 /*------------------------------ START ---------------------------------------*/
 
 // Importa o pacote principal do Flutter com widgets e tema Material.
-import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/imports.dart';
 
 // Função principal executada ao iniciar o app.
 void main() {

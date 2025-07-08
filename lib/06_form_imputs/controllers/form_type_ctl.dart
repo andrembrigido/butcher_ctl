@@ -1,4 +1,4 @@
-import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/imports.dart';
 
 /// 🧠 O que faz:
 /// Controla a seleção de tipo e nome da carne, com dados vindos da API fake.

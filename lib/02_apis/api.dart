@@ -1,4 +1,4 @@
-import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/imports.dart';
 
 /// 🧠 O que faz:
 /// Simula uma API real, retornando uma lista de carnes congeladas variadas.

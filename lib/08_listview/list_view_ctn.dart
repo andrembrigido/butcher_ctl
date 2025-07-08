@@ -1,4 +1,4 @@
-import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/imports.dart';
 
 /// 🧱 Widget principal que exibe três listas de carnes (retiradas, em alerta e em estoque)
 /// - Utiliza um PageView para permitir a navegação horizontal entre as listas

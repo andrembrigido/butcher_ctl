@@ -10,7 +10,7 @@
 // 🧱 Onde se encaixa:
 // Chamado dentro do `FormAdd`, aparece sempre que um novo item for adicionado.
 
-import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/imports.dart';
 
 class FormIdBtn extends StatefulWidget {
   const FormIdBtn({super.key});

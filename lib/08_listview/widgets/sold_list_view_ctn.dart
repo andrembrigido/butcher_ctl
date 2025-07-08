@@ -1,4 +1,4 @@
-import 'package:butcher_ctl/00_basic/imports.dart';
+import 'package:butcher_ctl/imports.dart';
 
 class SoldListViewCtn extends StatefulWidget {
   const SoldListViewCtn({super.key});
