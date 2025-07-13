@@ -20,7 +20,7 @@
 
 export 'package:flutter/material.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
-export 'package:butcher_ctl/app.dart';
+export 'package:butcher_ctl/00_/app.dart';
 export 'package:butcher_ctl/01_themes/colors_palette.dart';
 export 'package:butcher_ctl/02_apis/models/api_mdl.dart';
 export 'package:butcher_ctl/02_apis/api.dart';

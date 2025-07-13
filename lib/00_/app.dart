@@ -18,7 +18,7 @@ Não pode ter:
 // Importa as telas principais do app
 
 // Importa os componentes visuais do Flutter
-import 'package:butcher_ctl/imports.dart';
+import 'package:butcher_ctl/00_/imports.dart';
 
 // Widget principal do aplicativo
 class AppWidget extends StatelessWidget {

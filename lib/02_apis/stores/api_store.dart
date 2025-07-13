@@ -1,4 +1,4 @@
-import 'package:butcher_ctl/imports.dart';
+import 'package:butcher_ctl/00_/imports.dart';
 
 /// Store que escuta mudanças na lista de itens da API e notifica a UI
 class ItemStore extends ChangeNotifier {
